@@ -46,7 +46,7 @@ body{
 
 /* UNIVERSAL BOX SIZING */
 
-*:after,*:before{
+*,*:after,*:before{
     box-sizing: border-box;
 }
 
