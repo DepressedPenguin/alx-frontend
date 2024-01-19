@@ -1,3 +1,4 @@
+
 /* DEC VARABLES WITH ROOT */
 
 @import 'normalize.css';
@@ -45,7 +46,7 @@ body{
 
 /* UNIVERSAL BOX SIZING */
 
-*{
+*:after,*:before{
     box-sizing: border-box;
 }
 
