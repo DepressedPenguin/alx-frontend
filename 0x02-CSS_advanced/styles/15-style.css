@@ -43,14 +43,14 @@ body{
     min-height: var(--line-height-base);
 }
 
-html{
-    font-size: 62.5%;
-}
-
 /* UNIVERSAL BOX SIZING */
 
 *{
     box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
 }
 
 /* CHANGE a COLOR */
