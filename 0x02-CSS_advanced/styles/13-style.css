@@ -48,7 +48,7 @@ html{
 /* CHANGE a COLOR */
 /* REMOVE THE ANY <a> Decoration  */
 
-a[href]{
+a{
     color: #161616;
     text-decoration: none;
 }
