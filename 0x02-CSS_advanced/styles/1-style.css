@@ -1,0 +1,5 @@
+/* smoth scrolling */
+
+body{
+    scroll-behavior: smooth;
+}
