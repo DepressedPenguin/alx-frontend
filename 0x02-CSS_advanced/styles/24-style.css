@@ -100,6 +100,26 @@ a:active{
     color: #D73953;
 }
 
+/* all insie card-service */
+
+.card-services .card-title{
+    margin: 0;
+}
+
+.card-services a{
+    display: block;
+    padding: 2rem;
+    background-color: var(--color-light-grey);
+}
+
+/* HOVER */
+
+.card-services a:hover{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
+}
+
 /* SECTION CLASS */
 .section{
     padding: var(--section-padding);
@@ -266,23 +286,3 @@ ul.row{
     fill: var(--text-color);
 }
 
-
-/* all insie card-service */
-
-.card-services .card-title{
-    margin: 0;
-}
-
-.card-service a{
-    display: block;
-    padding: 2rem;
-    background-color: var(--color-light-grey);
-}
-
-/* HOVER */
-
-.card-service a:hover{
-    color: var(--color-white);
-    background-color: var(--color-primary);
-    text-decoration: none;
-}
