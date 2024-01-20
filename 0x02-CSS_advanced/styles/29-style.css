@@ -257,7 +257,7 @@ h1,h2,h3,h4,h5,h6{
 
 /* TAGGET BEFORE NAV-LINK NAV */
 
-nav .nav-link::before{
+.nav .nav-link::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -268,7 +268,7 @@ nav .nav-link::before{
 }
 
 /* TARAGET NAV LINK */
-.nav .nav-item::hover .nav-link::before{
+.nav .nav-item:hover .nav-link::before {
     background-color: var(--color-primary);
     width: 100%;
 }
@@ -775,5 +775,3 @@ ul.row{
     top: var(--header-logo-link-top);
     left: var(--header-logo-link-left);
 }
-
-
