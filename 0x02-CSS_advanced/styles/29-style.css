@@ -1,6 +1,7 @@
-/* DEC VARIABLES WITH ROOT */
+/* Importing Normalize.css */
 @import 'normalize.css';
 
+/* Define CSS variables with :root */
 :root {
     --color-primary: #d73953;
     --color-black: #090909;
@@ -11,33 +12,27 @@
     --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-    /* FONT SIZE */
+    /* Font sizes */
     --font-size-small: 1.2rem;
     --font-size-medium: 1.6rem;
     --font-size-large: 1.8rem;
     --font-size-x-large: 2.3rem;
     --font-size-xx-large: 4.8rem;
 
-    /* FONT WEIGHT */
+    /* Font weights */
     --font-weight-regular: 400;
     --font-weight-bold: 700;
 
-    /* LINE HEIGHT */
+    /* Line heights */
     --line-height-small: 1.2;
     --line-height-base: 1.5;
     --line-height-big: 1.8;
 
-    /* CENTER HEADER */
+    /* Header and section properties */
     --section-header-align: center;
-
-    /* TRANSFORM */
     --section-tagline-transform: uppercase;
-
-    /* TITLE MARGIN */
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
-
-    /* ADDED PADDINGS */
     --section-padding: 5rem 0;
     --section-header-padding: 0 0 3rem;
     --section-body-padding: 0 0 3rem;
@@ -45,19 +40,16 @@
     --section-footer-align: center;
     --footer-padding: 5rem 0 1rem;
 
-    /* TASK 18 PROPERTIES */
+    /* Navigation item properties */
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
     --nav-item-letter-spacing: 0.04rem;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
-    --nav-item-link-hover: var(--color-primary);
+    --nav-item-link-hover: var(--color-white);
 
-    /* TAGLINE MARGIN TASK 19 */
-    --section-tagline-margin: 0;
-
-    /* BUTTONS */
+    /* Button properties */
     --button-display: inline-block;
     --button-padding: 1.5rem 3rem;
     --button-border: 0.2rem solid var(--color-primary);
@@ -68,7 +60,7 @@
     --button-hover-text-decoration: none;
     --button-hover-background: var(--color-primary);
 
-    /* LOGO AND HEADER */
+    /* Header properties */
     --header-padding: 4rem 0 0;
     --header-logo-position: relative;
     --header-logo-link-display: inline-block;
@@ -77,7 +69,7 @@
     --header-logo-link-left: 0;
 }
 
-/* BODY */
+/* General styling for body */
 body {
     color: var(--text-color);
     scroll-behavior: smooth;
@@ -87,38 +79,39 @@ body {
     min-height: var(--line-height-base);
 }
 
-/* UNIVERSAL BOX SIZING */
+/* Universal box sizing */
 *:after,
 *:before {
     box-sizing: border-box;
 }
 
+/* Setting font size for HTML */
 html {
     font-size: 62.5%;
 }
 
-/* CHANGE LINK COLOR */
+/* Styling for anchor tags */
 a[href] {
     color: #161616;
     text-decoration: none;
 }
 
-/* VISITED LINK */
+/* Styling for visited links */
 a:visited {
     font-style: italic;
 }
 
-/* HOVER LINK */
+/* Styling for hover effect on links */
 a:hover {
     text-decoration: underline;
 }
 
-/* ACTIVE LINK */
+/* Styling for active links */
 a:active {
     background-color: var(--color-light-grey);
 }
 
-/* BUTTON CLASSES */
+/* Button class styling */
 .button {
     display: var(--button-display);
     padding: var(--button-padding);
@@ -128,62 +121,84 @@ a:active {
     text-decoration: var(--button-text-decoration);
 }
 
+/* Styling for button hover effect */
 .button:hover {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background-color: var(--button-hover-background);
 }
 
-/* VISUALLY HIDDEN */
+/* Styling for visually hidden elements */
 .visually-hidden {
     display: none;
 }
 
-/* CARD CATEGORY */
+/* Styling for card category */
 .card-category {
     color: #D73953;
 }
 
-/* CARD SERVICES */
+/* Styling for card services */
 .card-services .card-title {
     margin: 0;
 }
 
+/* Styling for card services link */
 .card-services a {
     display: block;
     padding: 2rem;
     background-color: var(--color-light-grey);
 }
 
+/* Styling for card services link hover effect */
 .card-services a:hover {
     color: var(--color-white);
     background-color: var(--color-primary);
     text-decoration: none;
 }
 
-/* SECTION CLASS */
+/* Styling for card testimonials */
+.card-testimonial {
+    text-align: center;
+}
+
+/* Styling for card testimonial avatar */
+.card-testimonial .card-avatar {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+/* Styling for card testimonial quote citation */
+.card-testimonial .card-quote cite {
+    display: block;
+    padding-top: 1rem;
+    color: var(--color-primary);
+}
+
+/* Styling for sections */
 .section {
     padding: var(--section-padding);
 }
 
-/* SECTION HEADER */
+/* Styling for section headers */
 .section-header {
     text-align: var(--section-header-align);
     padding: var(--section-header-padding);
 }
 
-/* SECTION BODY */
+/* Styling for section bodies */
 .section-body {
     padding: var(--section-body-padding);
 }
 
-/* SECTION FOOTER CLASS */
+/* Styling for section footers */
 .section-footer {
     padding: var(--section-footer-padding);
     text-align: var(--section-footer-align);
 }
 
-/* SECTION TITLE */
+/* Styling for section titles */
 .section-title {
     font-family: var(--font-family-title);
     font-size: var(--font-size-xx-large);
@@ -192,7 +207,7 @@ a:active {
     color: var(--section-title-color);
 }
 
-/* SECTION TAGLINE */
+/* Styling for section taglines */
 .section-tagline {
     color: #D73953;
     font-family: var(--font-family-title);
@@ -201,40 +216,74 @@ a:active {
     margin: var(--section-tagline-margin);
 }
 
-/* CONTAINER */
-.container {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+/* Styling for section hero */
+.section-hero {
+    background-size: 90rem auto;
 }
 
-.section-tagline,
-.card-category {
-    color: var(--color-primary);
+/* Styling for section hero title */
+.section-hero .section-title {
+    margin-bottom: 5rem;
 }
 
-/* HEADLINE LEVELS */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--font-family-title);
-    font-weight: var(--font-weight-bold);
+/* Styling for section hero inner */
+.section-hero .section-inner {
+    padding: 10rem 40rem 2rem 0;
 }
 
-/* FOOTER */
+/* Styling for rows and columns */
+ul.row {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.col-1-3 {
+    width: 33.33%;
+}
+
+.col-1-2 {
+    width: 50%;
+}
+
+[class^="col-"] {
+    float: left;
+    padding: 0.5rem;
+}
+
+/* Styling for footer */
 .footer {
     padding: var(--footer-padding);
 }
 
-/* NAVBAR MENU */
+/* Styling for footer address */
+.footer-address {
+    color: var(--text-color);
+}
+
+/* Styling for social links */
+.social-link {
+    display: block;
+}
+
+.social-link > svg {
+    fill: var(--text-color);
+}
+
+/* Dark theme styling using data attribute */
+[data-section-theme="dark"] {
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background-color: var(--color-black);
+    --button-color: var(--color-white);
+}
+
+/* Styling for the navigation menu */
 .navbar-menu {
     float: right;
 }
 
-/* NAV CLASS */
+/* Styling for navigation */
 .nav {
     margin: 0;
     padding: 0;
@@ -242,7 +291,7 @@ h6 {
     text-align: center;
 }
 
-/* NAV ITEM IN CLASS NAV */
+/* Styling for navigation items */
 .nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
@@ -252,125 +301,42 @@ h6 {
     margin: var(--nav-item-margin);
 }
 
-/* NAV LINK CLASS */
+/* Styling for navigation links */
 .nav .nav-link {
     display: block;
     padding: 0.5rem 1rem;
 }
 
+/* Styling for navigation links hover effect */
 .nav .nav-link:hover {
     color: var(--nav-item-link-hover);
 }
 
-/* UL ROW */
-ul.row {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-/* FOR EACH ROW AFTER */
-.row::after {
+/* Styling for navigation link before pseudo-element */
+.nav .nav-link::before {
     content: "";
-    display: table;
-    clear: both;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-white);
+    width: 0;
+    height: 0.2rem;
 }
 
-/* FOR COL-1-3 CLASS */
-.col-1-3 {
-    width: 33.33%;
+/* Styling for navigation item hover effect */
+.nav .nav-item:hover .nav-link::before {
+    background-color: var(--color-primary);
+    width: 100%;
 }
 
-/* COL-1-2 CLASS */
-.col-1-2 {
-    width: 50%;
-}
-
-/* FOOTER COPYRIGHT CLASS */
+/* Styling for footer copyright */
 .footer-copyright {
     margin: 0;
     font-size: var(--font-size-small);
     color: var(--text-color);
 }
 
+/* Styling for footer ul */
 .footer ul {
     text-align: right;
-}
-
-/* COL- CLASS */
-[class^="col-"] {
-    float: left;
-    padding: 0.5rem;
-}
-
-/* DARK THEME */
-[data-section-theme="dark"] {
-    --text-color: var(--color-white);
-    --section-title-color: var(--color-white);
-    background-color: var(--color-black);
-    --button-color: var(--color-white);
-}
-
-/* FOOTER ADDRESS CLASS */
-.footer-address {
-    color: var(--text-color);
-}
-
-/* SOCIAL LINK CLASS */
-.social-link {
-    display: block;
-}
-
-.social-link > svg {
-    fill: var(--text-color);
-}
-
-/* CARD TESTIMONIAL */
-.card-testimonial {
-    text-align: center;
-}
-
-.card-testimonial .card-avatar {
-    border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-}
-
-.card-testimonial .card-quote cite {
-    display: block;
-    padding-top: 1rem;
-    color: var(--color-primary);
-}
-
-/* SECTION HERO SELECTOR */
-.section-hero {
-    background-size: 90rem auto;
-}
-
-/* TARGET SECTION HERO */
-.section-hero .section-title {
-    margin-bottom: 5rem;
-}
-
-/* SECTION HERO */
-.section-hero .section-inner {
-    padding: 10rem 40rem 2rem 0;
-}
-
-/* HEADER SELECTOR */
-.header {
-    padding: var(--header-padding);
-}
-
-/* LOGO HEADER */
-.header-logo {
-    position: var(--header-logo-position);
-}
-
-/* TARGET LINK INSIDE HEADER LOGO */
-.header-logo a {
-    display: var(--header-logo-link-display);
-    position: var(--header-logo-link-position);
-    top: var(--header-logo-link-top);
-    left: var(--header-logo-link-left);
 }
