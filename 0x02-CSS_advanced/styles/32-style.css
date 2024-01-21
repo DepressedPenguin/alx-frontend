@@ -324,6 +324,7 @@ ul.row {
     background-color: var(--color-white);
     width: 0;
     height: 0.2rem;
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 /* Styling for navigation item hover effect */
@@ -420,27 +421,26 @@ ul.row {
 }
 
 .card-work:hover .card-inner {
-    transition: var(--transition-duration) var(--transition-cubic-bezier);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Transforms on card work */
 .card-work:hover .card-image {
     transform: scale(1.2);
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-outer {
     transform: scale(0.95);
 }
 
-/* Transitions on navigation items */
-.nav .nav-link::before {
-    transition: var(--transition-duration) var(--transition-cubic-bezier);
-}
-
 /* Animations on button */
 .button:hover {
-    transition: color var(--transition-duration) var(--transition-cubic-bezier),
-                background-color var(--transition-duration) var(--transition-cubic-bezier);
+    color: var(--button-hover-color);
+  text-decoration: var(--button-hover-text-decoration);
+  background-color: var(--button-hover-background);
+  transition-duration: var(--transition-duration);
+  transition-property: color, background-color;
 }
 
 /* Additional transitions on card works */
