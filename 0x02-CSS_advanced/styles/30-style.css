@@ -343,7 +343,7 @@ ul.row {
 
 /*  Card */
 
-.card-work {
+.card-work .card-outer {
     position: relative;
     overflow: hidden;
 }
@@ -367,9 +367,6 @@ ul.row {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.card-work:hover .card-title {
-    opacity: 1;
-}
 
 .card-work .card-title {
     text-align: center;
@@ -386,14 +383,14 @@ ul.row {
 }
 
 .card-work .card-title a::after {
-    content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    content: "";
 }
 
-.card-title:hover::after {
+.card-work:hover .card-title {
     opacity: 1;
 }
